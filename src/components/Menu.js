@@ -16,7 +16,7 @@ const MenuPage = () => {
     }
 
     return (
-        <div>
+        <div style={{width: "100%", height: "100%", float: "left"}}>
             <div style={sideMenu}>
            <h2>Menu</h2>
            {meals.menuItems.map((meal, index) => (

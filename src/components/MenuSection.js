@@ -7,7 +7,7 @@ export default function MenuSection(props) {
         <h2>{props.selected}</h2>
         <ul>
            {data.map( (item, index) => (
-                <li style={{display: "block", paddingLeft: "20px"}}>
+                <li key={index} style={{display: "block", paddingLeft: "20px"}}>
                     {Object.keys(item)} ... {Object.values(item)}
                 </li>
             ) )} 
