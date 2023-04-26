@@ -1,5 +1,6 @@
 import { useMealsListContext } from "../providers/MealsProvider";
 import MenuSection from "./MenuSection";
+import MyVideo from "./MyVideo";
 
 const MenuPage = () => {
 
@@ -19,6 +20,7 @@ const MenuPage = () => {
         <div style={{width: "100%", height: "100%", float: "left"}}>
             <div style={sideMenu}>
            <h2>Menu</h2>
+           
            {meals.menuItems.map((meal, index) => (
                 <h3 onClick={handleClick} key={index}>
                     {Object.keys(meal)}
@@ -30,6 +32,7 @@ const MenuPage = () => {
                     data={meals.menuItems.filter(
                         value => Object.keys(value)[0] === meals.selected)[0]
                     } />
+            <MyVideo url="https://www.youtube.com/watch?v=rSLiOqJ2egU" />
         </div>
     )
 }
